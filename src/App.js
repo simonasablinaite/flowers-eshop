@@ -1,6 +1,7 @@
 import './style/home.css';
 
 import { Routes, Route, NavLink, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       </header>
 
       <Routes>
-
+        <Route path='/' element={<HomePage />} />
 
 
         <Route path='*' element={<><h1>404 Error. Page Not Found</h1>  <Link to='/'>Go to Home Page</Link> </>} />
