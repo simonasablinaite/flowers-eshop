@@ -1,0 +1,36 @@
+@use '../../../style/main/_variables.scss';
+
+.product-card {
+  border: 1px solid grey;
+  width: 250px;
+  padding: variables.$p-20;
+
+  .product-name {
+   font-size: variables.$fs-15;
+   margin-bottom: variables.$mb-10;
+   text-transform: uppercase;
+  }
+  .product-description {
+   font-size: variables.$fs-15;
+   margin-bottom: variables.$mb-10;
+   color: variables.$card-description-text;
+  }
+
+  .purchase {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   margin-top: variables.$mt-10;
+  }
+  .order-item {
+   color: variables.$item-color;
+   text-transform: uppercase;
+   font-size: variables.$fs-10;
+
+  
+  }
+  a {
+   text-decoration: none;
+   font-weight: 600;
+}
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Filter from '../../Components/Shop/Aside/Filter'
-import ShopList from '../../Components/Shop/ShopList/ShopList'
+import ProductsList from '../../Components/Shop/ShopList/ProductsList'
+
 
 
 
@@ -12,7 +13,7 @@ const ShopPage = () => {
          </aside>
 
          <div className='shops-list'>
-            <ShopList />
+            <ProductsList />
          </div>
       </div>
    )
