@@ -14,8 +14,7 @@ header {
   border-top-right-radius: 10px;
 }
 header nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) 1fr 1fr repeat(3, 1fr);
+  display: flex;
   gap: 20px;
   justify-content: center;
   color: white;
