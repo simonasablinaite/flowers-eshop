@@ -47,4 +47,10 @@ header nav a {
 .img-wrapper .logo-description {
   font-size: 8px;
   margin-top: 5px;
+}
+
+.choice-languages {
+  border: none;
+  background-color: transparent;
+  color: white;
 }/*# sourceMappingURL=home.css.map */

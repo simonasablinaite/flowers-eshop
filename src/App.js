@@ -17,6 +17,16 @@ function App() {
           <p className='web-name'>Lillepood</p>
           <span className='logo-description'>.est 2007.</span>
         </div>
+
+        <nav>
+          <NavLink className='nav-item' to='/'>Home Page</NavLink>
+          <select className='choice-languages' name="languages" id="languages">
+            <option value="lt">lt</option>
+            <option value="en">en</option>
+          </select>
+        </nav>
+
+
       </header>
 
       <Routes>

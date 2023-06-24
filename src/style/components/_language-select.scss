@@ -1,0 +1,7 @@
+@use '../main/variables';
+
+.choice-languages {
+   border: none;
+   background-color: transparent;
+   color: variables.$main-text-color;
+}
