@@ -1,10 +1,12 @@
 import React from 'react'
+import ShopPage from '../ShopPage/ShopPage'
+
 
 const HomePage = () => {
    return (
       <div>
          <div>HERO</div>
-         <div>SHOP</div>
+         <ShopPage />
          <div>FOOTER</div>
       </div>
    )
