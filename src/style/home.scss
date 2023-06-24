@@ -1,0 +1,6 @@
+// main:
+@use './main/reset';
+// components:
+@use './components/header';
+@use './components/_logo.scss';
+@use './components/language-select';

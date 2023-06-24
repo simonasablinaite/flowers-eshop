@@ -10,13 +10,12 @@ header {
 
 
       nav {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr) 1fr 1fr repeat(3, 1fr);
+      display: flex;
          gap: 20px;
          justify-content: center;
          color: variables.$main-text-color;
          align-items: center;
-         padding: 30px;
+         padding: variables.$p-30;
 
             a {
                display: flex;
