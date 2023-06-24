@@ -15,9 +15,6 @@ function App() {
 
 
 
-
-
-
         <Route path='*' element={<><h1>404 Error. Page Not Found</h1>  <Link to='/'>Go to Home Page</Link> </>} />
       </Routes>
 
