@@ -12,8 +12,8 @@ const ProductsList = () => {
    const productCardData = [
       {
          picture: puokste_1,
-         title: 'Pavasarinių gėlių puokštė',
-         description: 'Puokštę sudaro daug, įvairių pavasarinių gėlių',
+         title: 'Spring flowers bouquet',
+         description: 'The bouquet consists of many different spring flowers',
          price: 50,
       },
       {
@@ -24,14 +24,14 @@ const ProductsList = () => {
       },
       {
          picture: puokste_3,
-         title: 'Puokštė 3',
-         description: 'Red, yellow and orange floral botanical flower bouquets. Wild spring leaf isolated. ',
+         title: 'Festive bouquet',
+         description: 'Red, yellow and orange floral botanical flower bouquet. Wild spring leaf isolated. ',
          price: 45,
       },
       {
          picture: puokste_4,
-         title: 'Puokštė 4',
-         description: 'Aprašymas 4',
+         title: 'Pink and green flowers bouquet',
+         description: 'Pink roses, yellow smaller gerberas and a lot of green akcents',
          price: 125,
       },
       {

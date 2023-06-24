@@ -1,13 +1,25 @@
 @use '../../../style/main/_variables.scss';
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid grey;
   width: 250px;
   padding: variables.$p-20;
+  text-align: center;
+  position: relative;
 
+
+&:hover {
+  border: 3px solid variables.$item-color;
+  transition: 0.2s;
+
+}
   .product-name {
    font-size: variables.$fs-15;
-   margin-bottom: variables.$mb-10;
+   margin: variables.$mb-10 0;
    text-transform: uppercase;
   }
   .product-description {
@@ -17,20 +29,22 @@
   }
 
   .purchase {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
    align-items: center;
    margin-top: variables.$mt-10;
+   
   }
   .order-item {
    color: variables.$item-color;
    text-transform: uppercase;
-   font-size: variables.$fs-10;
-
+   font-size: variables.$fs-15;
   
   }
   a {
    text-decoration: none;
    font-weight: 600;
+
 }
 }

@@ -3,8 +3,6 @@ import Filter from '../../Components/Shop/Aside/Filter'
 import ProductsList from '../../Components/Shop/ShopList/ProductsList'
 
 
-
-
 const ShopPage = () => {
    return (
       <div className='shop-wrapper'>

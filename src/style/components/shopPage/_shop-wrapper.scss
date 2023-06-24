@@ -1,6 +1,10 @@
 @use '../../main/variables';
 
 .shop-wrapper {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   display: flex;
+   width: 75%;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: variables.$p-50;
 }

@@ -1,0 +1,17 @@
+@use '../../../style/main/variables';
+
+.ordered-item {
+   font-size: variables.$fs-10;
+   text-align: center;
+   width: 70px;
+   text-transform: uppercase;
+   background-color: variables.$ordered-item-color;
+   color: variables.$main-text-color;
+   border-radius: 50%;
+padding: 20px 25px 20px 10px;
+   font-weight: 600;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+
+}

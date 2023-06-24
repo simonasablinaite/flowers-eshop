@@ -21,10 +21,11 @@ const ProductCard = ({ picture, title, description, price }) => {
                   <img style={{ width: 30, heigth: 30 }}
                      className='basket-cart'
                      src={basketCart} alt="cart" />
-                  <span className='order-item'>Į krepšelį</span>
+                  <span className='order-item'>Add</span>
                </Link>
             </div>
          </div>
+         <span className='ordered-item'>Ordered</span>
       </div>
    )
 }
