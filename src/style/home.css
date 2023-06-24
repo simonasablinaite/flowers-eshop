@@ -1,3 +1,10 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -24,4 +31,21 @@ header nav a {
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.img-wrapper .web-name {
+  font-weight: 600;
+  margin-top: 5px;
+}
+.img-wrapper .logo-description {
+  font-size: 8px;
+  margin-top: 5px;
 }/*# sourceMappingURL=home.css.map */

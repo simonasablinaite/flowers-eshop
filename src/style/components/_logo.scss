@@ -1,0 +1,20 @@
+@use '../main/variables';
+
+.img-wrapper {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   color: variables.$main-text-color;
+   font-size: variables.$fs-10;
+   text-transform: uppercase;
+
+   .web-name {
+      font-weight: 600;
+      margin-top: variables.$m-5;
+
+   }
+   .logo-description {
+      font-size: variables.$fs-8;
+      margin-top: variables.$m-5;
+   }
+}
