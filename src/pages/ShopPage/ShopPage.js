@@ -1,5 +1,5 @@
 import React from 'react'
-import Filter from '../../Components/Shop/Aside/Filter'
+import Aside from '../../Components/Shop/Aside/Aside'
 import ProductsList from '../../Components/Shop/ShopList/ProductsList'
 
 
@@ -7,7 +7,7 @@ const ShopPage = () => {
    return (
       <div className='shop-wrapper'>
          <aside>
-            <Filter />
+            <Aside />
          </aside>
 
          <div className='shops-list'>
