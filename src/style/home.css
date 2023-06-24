@@ -53,4 +53,9 @@ header nav a {
   border: none;
   background-color: transparent;
   color: white;
+}
+
+.shop-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=home.css.map */

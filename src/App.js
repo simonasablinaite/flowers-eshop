@@ -3,6 +3,7 @@ import { Routes, Route, NavLink, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 
 import logo from './img/logo.png';
+import ShopPage from './pages/ShopPage/ShopPage';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className='header'>
         <nav className='navigation'>
           <NavLink className='nav-item' to='/'>Home Page</NavLink>
+          <NavLink className='nav-item' to='/shop'>Shop</NavLink>
         </nav>
 
         <div className='img-wrapper'>
@@ -31,7 +33,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
-
+        <Route path='/shop' element={<ShopPage />} />
 
         <Route path='*' element={<><h1>404 Error. Page Not Found</h1>  <Link to='/'>Go to Home Page</Link> </>} />
       </Routes>
