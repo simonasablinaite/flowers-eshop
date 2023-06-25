@@ -6,11 +6,19 @@ import ProductCard from './ProductCard'
 // import puokste_4 from '../../../img/puokste-4.jpg'
 // import puokste_5 from '../../../img/puokste-5.jpg'
 // import puokste_6 from '../../../img/puokste-6.jpg'
-
+import { API_URL } from '../../../config.js';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductsList = () => {
 
+   const [newProducts, setNewProducts] = useState([]);
 
+   useEffect(() => {
+      fetch(`${API_URL}/products`)
+         .then(res => res.json())
+         .then(data => setNewProducts(data));
+   }, [])
    // const productCardData = [
    //    {
    //       picture: puokste_1,
@@ -52,7 +60,17 @@ const ProductsList = () => {
 
    return (
       <div className='product-list'>
-         {/* {productCardData.map((product, index) => (
+
+         <ul>
+            {newProducts.map(product => <li key={product.id}>
+               <Link to={'/product'}>{product.title}</Link></li>)}
+         </ul>
+
+
+
+
+
+         {/* {newProducts.map((product, index) => (
             <ProductCard
                key={index}
                picture={product.picture}

@@ -115,6 +115,9 @@ header nav a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.product-list ul > li {
+  text-decoration: none;
+}
 
 .ordered-item {
   font-size: 10px;
