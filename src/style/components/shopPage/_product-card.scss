@@ -34,6 +34,11 @@
    justify-content: space-between;
    align-items: center;
    margin-top: variables.$mt-10;
+   border: 1px solid grey;
+  
+   .price {
+    padding: variables.$p-10;
+   }
    
   }
   .order-item {
@@ -48,3 +53,4 @@
 
 }
 }
+

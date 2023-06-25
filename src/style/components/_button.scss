@@ -1,0 +1,17 @@
+@use '../main/variables';
+
+.btn {
+   border: none;
+   padding: 15px;
+   background-color: transparent;
+   border-left: 1px solid grey;
+   cursor: pointer;
+}
+
+.cart-count {
+   position: relative;
+   top: -20px;
+   right: 83px;
+   color: red;
+   font-size: variables.$fs-15;
+}

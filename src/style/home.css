@@ -96,6 +96,10 @@ header nav a {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  border: 1px solid grey;
+}
+.product-card .purchase .price {
+  padding: 10px;
 }
 .product-card .order-item {
   color: #f86c7a;
@@ -130,4 +134,20 @@ header nav a {
 aside {
   display: flex;
   width: 35%;
+}
+
+.btn {
+  border: none;
+  padding: 15px;
+  background-color: transparent;
+  border-left: 1px solid grey;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: relative;
+  top: -20px;
+  right: 83px;
+  color: red;
+  font-size: 15px;
 }/*# sourceMappingURL=home.css.map */

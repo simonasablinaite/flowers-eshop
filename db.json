@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "products": [
+    {
+      "producCategoryId": 1,
+      "id": 1,
+      "title": "Hot Romance",
+      "photoUrl": "https://cdn.shopify.com/s/files/1/2601/3352/products/4_1_70b7c2c2-66af-4ff2-8fc7-5576f1f9ef44_493x.jpg?v=1681954530",
+      "description": "Let your romance blossom like never before - gorgeous red roses and carnations, ornately decorated with sprays of white statice, all tied together with gorgeous hues of gold and black. Our Mirabella flower bouquet is the perfect way to add a touch of magic on just about any day!"
+    },
+    {
+      "productCategoryId": 1,
+      "id": 2,
+      "title": "Ariana",
+      "url": "https://cdn.shopify.com/s/files/1/2601/3352/products/BR_05_2_493x.jpg?v=1635434089",
+      "description": "Wonderfully uplifting, our vibrant Ariana arrangement is the one that you need if you're looking to delightfully surprise a loved one! With hues of exuberant pinks and yellows, it is made complete with lively greens, thanks to its eucalyptus stems."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

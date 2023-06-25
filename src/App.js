@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage/HomePage';
 
 import logo from './img/logo.png';
 import ShopPage from './pages/ShopPage/ShopPage';
+import OrderPage from './pages/OrderPage/OrderPage';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         </div>
 
         <nav>
-          <NavLink className='nav-item' to='/'>Home Page</NavLink>
+          <NavLink className='nav-item' to='/order-form'>Order</NavLink>
+
           <select className='choice-languages' name="languages" id="languages">
             <option value="lt">lt</option>
             <option value="en">en</option>
@@ -34,6 +36,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/shop' element={<ShopPage />} />
+        <Route path='/order-form' element={<OrderPage />} />
 
         <Route path='*' element={<><h1>404 Error. Page Not Found</h1>  <Link to='/'>Go to Home Page</Link> </>} />
       </Routes>

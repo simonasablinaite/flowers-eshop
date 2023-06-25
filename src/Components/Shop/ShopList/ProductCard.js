@@ -1,10 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react'
 import basketCart from '../../../img/Shopping-Cart-Icon.png'
 
 
 const ProductCard = ({ picture, title, description, price }) => {
+
+   const [cartCount, setCartCount] = useState(0);
+
+   const addedProductHandler = () => {
+      setCartCount(cartCount + 1);
+   }
 
    return (
       <div className='product-card'>
@@ -17,16 +21,20 @@ const ProductCard = ({ picture, title, description, price }) => {
          <div className='purchase'>
             <span className='price'>&#8364; {price}</span>
             <div className='order'>
-               <Link to='/order-form'>
-                  <img style={{ width: 30, heigth: 30 }}
+
+               <button
+                  onClick={addedProductHandler}
+                  className='btn'>
+                  <img style={{ width: 20, heigth: 20 }}
                      className='basket-cart'
-                     src={basketCart} alt="cart" />
-                  <span className='order-item'>Add</span>
-               </Link>
+                     src={basketCart} alt="cart" /> Add to cart
+                  <span className='cart-count'>{cartCount}</span>
+               </button>
             </div>
          </div>
          <span className='ordered-item'>Ordered</span>
-      </div>
+
+      </div >
    )
 }
 

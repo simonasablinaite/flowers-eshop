@@ -32,11 +32,11 @@ const Filter = () => {
       <>
          <div className='filter-wrapper'>
             <div className='region-list'>
-               {countryList.map((item, index) => (
-                  console.log(item.country),
-                  console.log(item.region),
-                  console.log(item.cities.map(city => city))
-               ))}
+               {/* {countryList.map((item, index) => (
+                  // console.log(item.country),
+                  // console.log(item.region),
+                  // console.log(item.cities.map(city => city))
+               ))} */}
 
 
                <form>
