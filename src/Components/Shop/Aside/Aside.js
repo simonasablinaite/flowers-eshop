@@ -1,18 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Categories from './Categories'
-import Filter from './Filter'
+import Output from './Output'
 import Price from './Price'
 import Search from './Search'
 
 const Aside = () => {
+   const [searchField, setSearchField] = useState('');
 
+   const [asideSectionData, setAsideSectionData] = useState(null);
+   //    {
+   //    // country: '',
+   // title: '',
+   // description: '',
+   //    // city: '',
+   //    // categories: ['', '', ''],
+   //    // price: ''
+
+   // }
+
+   const searchFieldHandler = event => setSearchField(event.target.value);
+
+   const formSubmitHandler = (event) => {
+      event.preventDefault();
+      console.log(searchField);
+   }
    return (
-      <form >
-         <Filter />
+      <form onSubmit={formSubmitHandler} >
+
          <Categories />
          <Price />
-         <Search />
-
+         <Search
+            searchField={searchField}
+            searchFieldHandler={searchFieldHandler}
+         />
+         <Output
+            asideSectionData={asideSectionData}
+         />
       </form>
    )
 }

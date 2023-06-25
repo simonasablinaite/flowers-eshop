@@ -10,7 +10,7 @@ const ProductCard = ({ picture, title, description, price }) => {
 
    const addedProductHandler = () => {
       setCartCount(cartCount + 1);
-      toast.success('Product added successfully');
+      toast.success('The product has been added successfully!');
 
    }
 
