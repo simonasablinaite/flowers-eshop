@@ -134,6 +134,13 @@ header nav a {
 aside {
   display: flex;
   width: 35%;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 197px;
+  right: 275px;
 }
 
 .btn {

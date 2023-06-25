@@ -39,7 +39,7 @@ const Filter = () => {
                ))} */}
 
 
-               <form>
+               <div>
                   <div className='choose-region-wrapper'>
                      <h3>Choose region</h3> <br />
                      <label htmlFor="choose-region"></label>
@@ -56,7 +56,7 @@ const Filter = () => {
                      </select>
                   </div>
 
-               </form>
+               </div>
             </div >
          </div>
       </>

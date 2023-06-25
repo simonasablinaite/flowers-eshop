@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import basketCart from '../../../img/Shopping-Cart-Icon.png'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ProductCard = ({ picture, title, description, price }) => {
@@ -8,6 +10,8 @@ const ProductCard = ({ picture, title, description, price }) => {
 
    const addedProductHandler = () => {
       setCartCount(cartCount + 1);
+      toast.success('Product added successfully');
+
    }
 
    return (

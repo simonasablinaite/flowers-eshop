@@ -5,13 +5,15 @@ import Price from './Price'
 import Search from './Search'
 
 const Aside = () => {
+
    return (
-      <div>
+      <form >
          <Filter />
          <Categories />
          <Price />
          <Search />
-      </div>
+
+      </form>
    )
 }
 

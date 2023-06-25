@@ -1,15 +1,18 @@
 import './style/home.css';
 import { Routes, Route, NavLink, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
+import { ToastContainer } from 'react-toastify';
 
 import logo from './img/logo.png';
 import ShopPage from './pages/ShopPage/ShopPage';
 import OrderPage from './pages/OrderPage/OrderPage';
 
 function App() {
+
   return (
     <div className="App">
       <header className='header'>
+
         <nav className='navigation'>
           <NavLink className='nav-item' to='/'>Home Page</NavLink>
           <NavLink className='nav-item' to='/shop'>Shop</NavLink>
@@ -29,8 +32,6 @@ function App() {
             <option value="en">en</option>
           </select>
         </nav>
-
-
       </header>
 
       <Routes>
@@ -41,7 +42,22 @@ function App() {
         <Route path='*' element={<><h1>404 Error. Page Not Found</h1>  <Link to='/'>Go to Home Page</Link> </>} />
       </Routes>
 
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+
+
     </div>
+
   );
 }
 
